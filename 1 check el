@@ -1,0 +1,5 @@
+if (!elem.firstChild) 
+  { узел elem пуст }
+
+if (!elem.lastChild) 
+  { узел elem пуст }
