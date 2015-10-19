@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+
+
+<div id = 'b1'>
+
+</div>
+
+<div id = 'b2'>
+
+</div>
+  
+  <script>
+   
+ function replaceElBy(block1, block2){
+
+  var el1 = document.getElementById(block1);
+
+  var el2 = document.getElementById(block2);
+
+  var newEl2 = el2.cloneNode(true);
+ 
+
+  document.body.appendChild(newEl2);
+
+ document.body.replaceChild(el2, el1);
+
+}
+  
+replaceElBy('b1', 'b2');
+
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
