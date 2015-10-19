@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+
+
+<div id = 'myBlock'>
+
+</div>
+  
+  <script>
+   
+ function createSpanInBlockByID(blockID){
+
+  var element = document.getElementById(blockID);
+  
+  var newElement = document.createElement('span');
+
+  element.appendChild(newElement);
+
+
+
+ }
+
+createSpanInBlockByID('myBlock');
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
