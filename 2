@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+
+  <style>
+   
+
+    td {
+      padding: 3px 5px;
+      background-color: green;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+
+  <table border="1">
+<tr>
+<td>ячейка 1, 1 ряд</td>
+<td>ячейка 2, 1 ряд</td>
+<td>ячейка 3, 1 ряд</td>
+<td>ячейка 4, 1 ряд</td>
+<td>ячейка 5, 1 ряд</td>
+</tr>
+<tr>
+<td>ячейка 1, 2 ряд</td>
+<td>ячейка 2, 2 ряд</td>
+<td>ячейка 3, 2 ряд</td>
+<td>ячейка 4, 2 ряд</td>
+<td>ячейка 5, 2 ряд</td>
+</tr>
+<tr>
+<td>ячейка 1, 3 ряд</td>
+<td>ячейка 2, 3 ряд</td>
+<td>ячейка 3, 3 ряд</td>
+<td>ячейка 4, 3 ряд</td>
+<td>ячейка 5, 3 ряд</td>
+</tr>
+<tr>
+<td>ячейка 1, 4 ряд</td>
+<td>ячейка 2, 4 ряд</td>
+<td>ячейка 3, 4 ряд</td>
+<td>ячейка 4, 4 ряд</td>
+<td>ячейка 5, 4 ряд</td>
+</tr>
+<tr>
+<td>ячейка 1, 5 ряд</td>
+<td>ячейка 2, 5 ряд</td>
+<td>ячейка 3, 5 ряд</td>
+<td>ячейка 4, 5 ряд</td>
+<td>ячейка 5, 5 ряд</td>
+</tr>
+</table> 
+
+  
+  <script>
+
+   
+
+    var table = document.body.children[1];
+
+    for (var i = 0; i < table.rows.length; i++) {
+      var row = table.rows[i];
+      row.cells[i].style.backgroundColor = 'red';
+    }
+ 
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
