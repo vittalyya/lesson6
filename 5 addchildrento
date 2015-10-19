@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+
+
+<div id = 'myBlock'>
+
+</div>
+  
+  <script>
+   
+ function addChildrenTo(block, count, type){
+
+  var element = document.getElementById(block);
+
+  for (var i=1; i<=count; i++){
+	var newElement = document.createElement(type);
+	 element.appendChild(newElement);
+  }
+}
+  
+
+addChildrenTo('myBlock', 5, 'span');
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
