@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+
+
+<div id = 'myBlock'>
+
+</div>
+  
+  <script>
+   
+ function createCloneNode(block){
+
+  var element = document.getElementById(block);
+
+  var newElement = element.cloneNode(true);
+ 
+
+  document.body.appendChild(newElement);
+
+
+ }
+
+createCloneNode('myBlock')
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
